@@ -1,6 +1,5 @@
 import UserModel from "@/model/User.model";
 import dbConnect from "@/lib/dbConnect";
-import { z } from "zod";
 import {verifySchema} from "@/schemas/verifySchema";
 
 export async function POST(req: Request){
