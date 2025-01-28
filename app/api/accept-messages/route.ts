@@ -49,7 +49,7 @@ export async function POST(req: Request) {
       }
     );
   } catch (error) {
-    console.log("Failed to update user status to accept messages");
+    console.log("Failed to update user status to accept messages", error);
     return Response.json(
       {
         status: false,
@@ -102,7 +102,7 @@ export async function GET(req: Request) {
       }
     );
   } catch (error) {
-    console.log("Failed to find Message status");
+    console.log("Failed to find Message status", error);
     return Response.json(
       {
         status: false,
